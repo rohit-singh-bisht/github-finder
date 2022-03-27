@@ -13,7 +13,7 @@ function UserItem({user}) {
                 </div>
                 <div>
                     <h2 className="card-title">{user.login}</h2>
-                    <Link className="text-base-content opacity-40 hover:opacity-60" to={`/users/${user.login}`}> View Profile </Link>
+                    <Link className="text-base-content opacity-40 hover:opacity-60" to={`/user/${user.login}`}> View Profile </Link>
                 </div>
             </div>
             
