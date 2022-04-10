@@ -26,8 +26,8 @@ export const GithubProvider = ({children}) => {
 
         setLoading()
         const response = await fetch(`https://api.github.com/search/users?${params}`)
-        const {items} = await response.json()
-
+        const data = await response.json()
+        const items = data.items;
         dispatch({
             type: 'GET_USERS',
             payload: items
